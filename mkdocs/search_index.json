@@ -1,0 +1,249 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Awesome NLP with Ruby \n \n\n\n\n\n\n\nUseful resources for text processing in \nRuby\n\n\n\n\nThis curated list comprises \nawesome\n\nresources, libraries, information sources about computational processing of texts\nin human languages with the \nRuby programming language\n.\nThat field is often referred to as\n\nNLP\n,\n\nComputational Linguistics\n,\n\nHLT\n (Human Language Technology)\nand can be brought in conjunction with\n\nArtificial Intelligence\n,\n\nMachine Learning\n,\n\nInformation Retrieval\n,\n\nText Mining\n,\n\nKnowledge Extraction\n\nand other related disciplines.\n\n\nThis list comes from our day to day work on Language Models and NLP Tools.\nRead \nwhy\n this list is awesome. Our \nFAQ\n describes the\nimportant decisions and useful answers you may be interested in.\n\n\nOur main goal is to promote Ruby as a tool for NLP related tasks. Your help,\nsuggestions and contributions are welcome! We kindly ask you to study\nthe \nContribution\n section. Follow us on \nTwitter\n\nand please spread the word using the \n#RubyNLP\n hash tag!\n\n\nNLP Pipeline Subtasks\n\n\nPipeline Generation\n\n\n\n\ncomposable_operations\n -\n  Definition framework for operation pipelines.\n\n\nruby-spark\n -\n  Spark bindings with an easy to understand DSL.\n\n\nphobos\n -\n  Simplified Ruby Client for \nApache Kafka\n.\n\n\n\n\nMultipurpose Engines\n\n\n\n\nopen-nlp\n -\n  Ruby Bindings for the \nOpenNLP\n Toolkit.\n\n\nstanford-core-nlp\n -\n  Ruby Bindings for the Stanford \nCoreNLP\n tools.\n\n\ntreat\n -\n  Natural Language Processing framework for Ruby (like \nNLTK\n for Python).\n\n\nnlp_toolz\n -\n  Wrapper over some \nOpenNLP\n classes and\n  the original \nBerkeley Parser\n.\n\n\nopen_nlp\n -\n  JRuby Bindings for the \nOpenNLP\n Toolkit.\n\n\n\n\nOn-line APIs\n\n\n\n\nalchemyapi_ruby\n -\n  Legacy Ruby SDK for AlchemyAPI/Bluemix.\n\n\nwit-ruby\n -\n  Ruby client library for the \nWit.ai\n Language Understanding Platform.\n\n\nwlapi\n - Ruby client library for\n  \nWortschatz Leipzig\n web services.\n\n\nmonkeylearn-ruby\n - Sentiment\n  Analysis, Topic Modelling, Language Detection, Named Entity Recognition via\n  a Ruby based Web API client.\n\n\n\n\nLanguage Identification\n\n\nLanguage Identification is one of the first crucial steps in every NLP Pipeline.\n\n\n\n\nscylla\n -\n  Language Categorization and Identification.\n\n\n\n\nSegmentation\n\n\nTools for Tokenization, Word and Sentence Boundary Detection and Disambiguation.\n\n\n\n\ntokenizer\n -\n  Simple multilingual tokenizer.\n  \n[\ntutorial\n]\n\n\npragmatic_tokenizer\n -\n  Multilingual tokenizer to split a string into tokens.\n\n\nnlp-pure\n -\n  Natural language processing algorithms implemented in pure Ruby with minimal dependencies.\n\n\ntextoken\n -\n  Simple and customizable text tokenization library.\n\n\npragmatic_segmenter\n -\n  Word Boundary Disambiguation with many cookies.\n\n\npunkt-segmenter\n -\n  Pure Ruby implementation of the Punkt Segmenter.\n\n\ntactful_tokenizer\n -\n  RegExp based tokenizer for different languages.\n\n\nscapel\n -\n  Sentence Boundary Disambiguation tool.\n\n\n\n\nLexical Processing\n\n\nStemming\n\n\nStemming is the term used in information retrieval to describe the process for\nreducing wordforms to some base representation. Stemming should be distinguished\nfrom \nLemmatization\n since \nstems\n are not necessarily have\nlinguistic motivation.\n\n\n\n\nruby-stemmer\n -\n  Ruby-Stemmer exposes the SnowBall API to Ruby.\n\n\nuea-stemmer\n -\n  Conservative stemmer for search and indexing.\n\n\n\n\nLemmatization\n\n\nLemmatization is considered a process of finding a base form of a word. Lemmas\nare often collected in dictionaries.\n\n\n\n\nlemmatizer\n -\n  WordNet based Lemmatizer for English texts.\n\n\n\n\nCounting Types and Tokens\n\n\n\n\nwc\n -\n  Facilities to count word occurrences in a text.\n\n\nword_count\n -\n  Word counter for \nString\n and \nHash\n objects.\n\n\n\n\nFiltering Stop Words\n\n\n\n\nstopwords-filter\n - Filter and\n  Stop Word Lexicon based on the SnowBall lemmatizer.\n\n\n\n\nPhrasal Level Processing\n\n\n\n\nn_gram\n -\n  N-Gram generator.\n\n\nruby-ngram\n -\n  Break words and phrases into ngrams.\n\n\nraingrams\n -\n  Flexible and general-purpose ngrams library written in pure Ruby.\n\n\n\n\nSyntactic Processing\n\n\nConstituency Parsing\n\n\n\n\nstanfordparser\n -\n  Ruby based wrapper for the Stanford Parser.\n\n\n\n\nSemantic Analysis\n\n\n\n\namatch\n -\n  Set of five distance types between strings (including Levenshtein, Sellers, Jaro-Winkler, 'pair distance').\n\n\ndamerau-levenshtein\n -\n  Calculates edit distance using the Damerau-Levenshtein algorithm.\n\n\nFuzzyTools\n -\n  In-memory TF/IDF fuzzy document finding with a fancy default tokenizer.\n\n\nhotwater\n -\n  Fast Ruby FFI string edit distance algorithms.\n\n\nlevenshtein-ffi\n -\n  Fast string edit distance computation, using the Damerau-Levenshtein algorithm.\n\n\ntf_idf\n -\n  Term Frequency / Inverse Document Frequency in pure Ruby.\n\n\ntf-idf-similarity\n -\n  Calculate the similarity between texts using TF/IDF.\n\n\n\n\nPragmatical Analysis\n\n\n\n\nSentimentLib\n -\n  Simple extensible sentiment analysis gem.\n\n\n\n\nHigh Level Tasks\n\n\nSpelling and Error Correction\n\n\n\n\ngingerice\n -\n  Spelling and Grammar corrections via the \nGinger\n API.\n\n\nhunspell-i18n\n -\n  Ruby bindings to the standard \nHunspell\n Spell Checker.\n\n\nffi-hunspell\n -\n  FFI based Ruby bindings for \nHunspell\n.\n\n\nhunspell\n -\n  Ruby bindings to \nHunspell\n via Ruby C API.\n\n\n\n\nText Alignment\n\n\n\n\nalignment\n -\n  Alignment routines for bilingual texts (Gale-Church implementation).\n\n\n\n\nMachine Translation\n\n\n\n\nGoogle API Client\n -\n  Google API Ruby Client.\n\n\nmicrosoft_translator\n -\n  Ruby client for the microsoft translator API.\n\n\ntermit\n -\n  Google Translate with speech synthesis in your terminal.\n\n\n\n\nDialog Systems\n\n\n\n\nchatterbot\n -\n  Straightforward ruby-based Twitter Bot Framework, using OAuth to authenticate.\n\n\nlita\n -\n  chat operation bot framework written with persistent storage provided by \nRedis\n.\n\n\n\n\nSentiment Analysis\n\n\n\n\nstimmung\n -\n  Semantic Polarity based on the\n  \nSentiWS\n lexicon.\n\n\n\n\nNumbers, Dates, and Time Parsing\n\n\n\n\nchronic\n -\n  Pure Ruby natural language date parser.\n\n\nchronic_between\n -\n  Simple Ruby natural language parser for date and time ranges.\n\n\nchronic_duration\n -\n  Pure Ruby parser for elapsed time.\n\n\nkronic\n -\n  Methods for parsing and formatting human readable dates.\n\n\nnickel\n -\n  Extracts date, time, and message information from naturally worded text.\n\n\ntickle\n -\n  Parser for recurring and repeating events.\n\n\nnumerizer\n -\n  Ruby parser for English number expressions.\n\n\n\n\nNamed Entity Recognition\n\n\n\n\nruby-ner\n -\n  Named Entity Recognition with Stanford NER and Ruby.\n\n\nruby-nlp\n -\n  Ruby Binding for Stanford Pos-Tagger and Name Entity Recognizer.\n\n\n\n\nText-to-Speech-to-Text\n\n\n\n\nespeak-ruby\n -\n  Small Ruby API for utilizing 'espeak' and 'lame' to create text-to-speech mp3 files.\n\n\ntts\n -\n  Text-to-Speech conversion using the Google translate service.\n\n\natt_speech\n -\n  Ruby wrapper over the AT\nT Speech API for speech to text.\n\n\npocketsphinx-ruby\n -\n  Pocketsphinx bindings.\n\n\n\n\nLinguistic Resources\n\n\n\n\nrwordnet\n -\n  Pure Ruby self contained API library for the \nPrinceton WordNet\u00ae\n.\n\n\nwordnet\n -\n  Performance tuned bindings for the \nPrinceton WordNet\u00ae\n.\n\n\n\n\nMachine Learning Libraries\n\n\nMachine Learning\n Algorithms\nin pure Ruby or written in other programming languages with appropriate bindings\nfor Ruby.\n\n\n\n\nrb-libsvm\n -\n  Support Vector Machines with Ruby.\n\n\nweka-jruby\n -\n  JRuby bindings for Weka, different ML algorithms implemented through Weka.\n\n\ndecisiontree\n -\n  Decision Tree ID3 Algorithm in pure Ruby\n  \n[\npost\n]\n.\n\n\nrtimbl\n -\n  Memory based learners from the Timbl framework.\n\n\nclassifier-reborn\n -\n  General classifier module to allow Bayesian and other types of classifications.\n\n\nlda-ruby\n -\n  Ruby implementation of the \nLDA\n\n  (Latent Dirichlet Allocation) for automatic Topic Modelling and Document Clustering.\n\n\nliblinear-ruby-swig\n -\n  Ruby interface to LIBLINEAR (much more efficient than LIBSVM for text classification).\n\n\nlinnaeus\n -\n  Redis-backed Bayesian classifier.\n\n\nmaxent_string_classifier\n -\n  JRuby maximum entropy classifier for string data, based on the OpenNLP Maxent framework.\n\n\nnaive_bayes\n -\n  Simple Naive Bayes classifier.\n\n\nnbayes\n -\n  Full-featured, Ruby implementation of Naive Bayes.\n\n\nomnicat\n -\n  Generalized rack framework for text classifications.\n\n\nomnicat-bayes\n -\n  Naive Bayes text classification implementation as an OmniCat classifier strategy.\n\n\nruby-fann\n -\n  Ruby bindings to the \nFast Artificial Neural Network Library (FANN)\n.\n\n\n\n\nFull Text Search, Information Retrieval, Indexing\n\n\n\n\nrsolr\n -\n  Ruby and Rails client library for \nApache Solr\n.\n\n\nsunspot\n -\n  Rails centric client for \nApache Solr\n.\n\n\nthinking-sphinx\n -\n  \nActive Record\n\n  plugin for using \nSphinx\n in (not only) Rails based projects.\n\n\nelasticsearch\n -\n  Ruby client and API for \nElasticsearch\n.\n\n\nelasticsearch-rails\n -\n  Ruby and Rails integrations for \nElasticsearch\n.\n\n\n\n\nLanguage Aware String Manipulation\n\n\nLibraries for language aware string manipulation, i.e. search, pattern matching,\ncase conversion, transcoding, regular expressions which need information about\nthe underlying language.\n\n\n\n\nFuzzyMatch\n -\n  find a needle in a haystack based on string similarity and regular expression rules.\n\n\nfuzzy-string-match\n -\n  Fuzzy string matching library for Ruby.\n\n\nactive_support\n -\n  RoR \nActiveSupport\n gem has various string extensions that can handle case.\n\n\nu\n -\n  U extends Ruby\u2019s Unicode support.\n\n\nunicode\n -\n  Unicode normalization library.\n\n\nCommonRegexRuby\n -\n  Find a lot of kinds of common information in a string.\n\n\nregexp-examples\n -\n  Generate strings that match a given regular expression.\n\n\nverbal_expressions\n -\n  Make difficult regular expressions easy.\n\n\n\n\nArticles, Posts, Talks, and Presentations\n\n\n\n\n2017\n\n\nScientific Computing on JRuby\n by \nPrasun Anand\n\n    \n[\nslides\n |\n    \nvideo\n |\n    \nslides\n |\n    \nslides\n]\n\n\nUnicode Normalization in Ruby\n by \nStarr Horne\n\n    \n[\npost\n]\n\n\n2016\n\n\nQuickly Create a Telegram Bot in Ruby\n by \nArdian Haxha\n\n    \n[\ntutorial\n]\n\n\nDeep Learning: An Introduction for Ruby Developers\n by \nGeoffrey Litt\n\n    \n[\nslides\n]\n\n\nHow I made a pure-Ruby word2vec program more than 3x faster\n by \nKei Sawada\n\n    \n[\nslides\n]\n\n\nD\u014dmo arigat\u014d, Mr. Roboto: Machine Learning with Ruby\n by \nEric Weinstein\n\n    \n[\nslides\n | \nvideo\n]\n\n\n2015\n\n\nN-gram Analysis for Fun and Profit\n by \nJesus Castello\n\n    \n[\ntutorial\n]\n\n\nMachine Learning made simple with Ruby\n by \nLorenzo Masini\n\n    \n[\ntutorial\n]\n\n\nUsing Ruby Machine Learning to Find Paris Hilton Quotes\n by \nRick Carlino\n\n    \n[\ntutorial\n]\n\n\nExploring Natural Language Processing in Ruby\n by \nKevin Dias\n\n    \n[\nslides\n]\n\n\nMachine Learning made simple with Ruby\n by \nLorenzo Masini\n\n    \n[\npost\n]\n\n\nPractical Data Science in Ruby\n by Bobby Grayson\n    \n[\nslides\n]\n\n\n2014\n\n\nNatural Language Parsing with Ruby\n by \nGlauco Cust\u00f3dio\n\n    \n[\ntutorial\n]\n\n\nDemystifying Data Science: Analyzing Conference Talks with Rails and Ngrams\n by\n    \nTodd Schneider\n\n    \n[\nvideo\n | \ncode\n]\n\n\nNatural Language Processing with Ruby\n by \nKonstantin Tennhard\n\n    \n[\nvideo\n | \nvideo\n |\n    \nvideo\n |\n    \nslides\n]\n\n\n2013\n\n\nHow to parse 'go' - Natural Language Processing in Ruby\n by\n    \nTom Cartwright\n\n    \n[\nslides\n |\n    \nvideo\n]\n\n\nNatural Language Processing in Ruby\n by \nBrandon Black\n\n    \n[\nslides\n |\n    \nvideo\n]\n\n\nNatural Language Processing with Ruby: n-grams\n by \nNathan Kleyn\n\n    \n[\ntutorial\n |\n    \ncode\n]\n\n\nSeeking Lovecraft, Part 1: An introduction to NLP and the Treat Gem\n by\n    \nRobert Qualls\n\n    \n[\ntutorial\n]\n\n\n2012\n\n\nMachine Learning with Ruby, Part One\n by \nVasily Vasinov\n\n    \n[\ntutorial\n]\n\n\n2011\n\n\nRuby one-liners\n by \nBenoit Hamelin\n\n    \n[\npost\n]\n\n\nClustering in Ruby\n by \nColin Drake\n\n    \n[\npost\n]\n\n\n2010\n\n\nbayes_motel \u2013 Bayesian classification for Ruby\n by \nMike Perham\n\n    \n[\npost\n]\n\n\n2009\n\n\nPorting the UEA-Lite Stemmer to Ruby\n by \nJason Adams\n\n    \n[\npost\n]\n\n\nNLP Resources for Ruby\n by \nJason Adams\n\n    \n[\npost\n]\n\n\n2008\n\n\nSupport Vector Machines (SVM) in Ruby\n by \nIlya Grigorik\n\n    \n[\npost\n]\n\n\nPractical text classification with Ruby\n by \nGleicon Moraes\n\n    \n[\npost\n |\n    \ncode\n]\n\n\n2007\n\n\nDecision Tree Learning in Ruby\n by \nIlya Grigorik\n\n    \n[\npost\n]\n\n\n\n\nProjects and Code Examples\n\n\n\n\nGoing the Distance\n -\n  Implementations of various distance algorithms with example calculations.\n\n\nNamed entity recognition with Stanford NER and Ruby\n -\n  NER Examples in Ruby and Java with some \nexplanations\n.\n\n\n\n\nBooks\n\n\n\n\nMiller, Rob\n.\n   \nText Processing with Ruby: Extract Value from the Data That Surrounds You.\n\n   Pragmatic Programmers, 2015.\n   \n[\nlink\n]\n\n\nWatson, Mark\n.\n   \nScripting Intelligence: Web 3.0 Information Gathering and Processing.\n\n   APRESS, 2010.\n   \n[\nlink\n]\n\n\nWatson, Mark\n.\n   \nPractical Semantic Web and Linked Data Applications.\n Lulu, 2010.\n   \n[\nlink\n]\n\n\n\n\nCommunity\n\n\n\n\nReddit\n\n\nStack Overflow\n\n\nTwitter\n\n\n\n\nNeeds your Help!\n\n\nAll projects in this section are really important for the community but need\nmore attention. Please if you have spare time and dedication spend some hours\non the code here.\n\n\n\n\nferret\n -\n  Information Retrieval in C and Ruby.\n\n\n\n\nRelated Resources\n\n\n\n\nAwesome Ruby\n -\n  Among other awesome items a short list of NLP related projects.\n\n\nRuby NLP\n -\n  State-of-Art collection of Ruby libraries for NLP.\n\n\nSpeech and Natural Language Processing\n -\n  General List of NLP related resources (mostly not for Ruby programmers).\n\n\nScientific Ruby\n -\n  Linear Algebra, Visualization and Scientific Computing for Ruby.\n\n\niRuby\n - IRuby kernel for Jupyter (formelly IPython).\n\n\nKiba\n -\n  Lightweight \nETL\n (Extract, Transform, Load) pipeline.\n\n\nAwesome OCR\n -\n  Multitude of OCR (Optical Character Recognition) resources.\n\n\nAwesome TensorFlow\n -\n  Machine Learning with TensorFlow libraries.\n\n\nrb-gsl\n -\n  Ruby interface to the \nGNU Scientific Library\n.\n\n\nThe Definitive Guide to Ruby's C API\n -\n  Modern Reference and Tutorial on Embedding and Extending Ruby using C programming language.\n\n\n\n\nContributing\n\n\nWe are very glad to see you in this section and highly appreciate any help!\n\n\nBut we also take care about the quality of this list. If you want to contribute\nplease:\n\n\n\n\nagree that your work will be published under the terms of the \nCC0\n license;\n\n\ncarefully read the \nContribution Guidelines\n.\n\n\n\n\nSome of the open tasks for contributors are listed in the \ntodo file\n.\nYou may want to start there.\n\n\nLicense\n\n\n \nAwesome NLP with Ruby\n by \nAndrei Beliankou\n and\n\nContributors\n.\n\n\nTo the extent possible under law, the person who associated CC0 with\n\nAwesome NLP with Ruby\n has waived all copyright and related or neighboring rights\nto \nAwesome NLP with Ruby\n.\n\n\nYou should have received a copy of the CC0 legalcode along with this\nwork. If not, see \nhttps://creativecommons.org/publicdomain/zero/1.0/\n.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#awesome-nlp-with-ruby", 
+            "text": "Useful resources for text processing in  Ruby   This curated list comprises  awesome \nresources, libraries, information sources about computational processing of texts\nin human languages with the  Ruby programming language .\nThat field is often referred to as NLP , Computational Linguistics , HLT  (Human Language Technology)\nand can be brought in conjunction with Artificial Intelligence , Machine Learning , Information Retrieval , Text Mining , Knowledge Extraction \nand other related disciplines.  This list comes from our day to day work on Language Models and NLP Tools.\nRead  why  this list is awesome. Our  FAQ  describes the\nimportant decisions and useful answers you may be interested in.  Our main goal is to promote Ruby as a tool for NLP related tasks. Your help,\nsuggestions and contributions are welcome! We kindly ask you to study\nthe  Contribution  section. Follow us on  Twitter \nand please spread the word using the  #RubyNLP  hash tag!", 
+            "title": "Awesome NLP with Ruby"
+        }, 
+        {
+            "location": "/#nlp-pipeline-subtasks", 
+            "text": "", 
+            "title": "NLP Pipeline Subtasks"
+        }, 
+        {
+            "location": "/#pipeline-generation", 
+            "text": "composable_operations  -\n  Definition framework for operation pipelines.  ruby-spark  -\n  Spark bindings with an easy to understand DSL.  phobos  -\n  Simplified Ruby Client for  Apache Kafka .", 
+            "title": "Pipeline Generation"
+        }, 
+        {
+            "location": "/#multipurpose-engines", 
+            "text": "open-nlp  -\n  Ruby Bindings for the  OpenNLP  Toolkit.  stanford-core-nlp  -\n  Ruby Bindings for the Stanford  CoreNLP  tools.  treat  -\n  Natural Language Processing framework for Ruby (like  NLTK  for Python).  nlp_toolz  -\n  Wrapper over some  OpenNLP  classes and\n  the original  Berkeley Parser .  open_nlp  -\n  JRuby Bindings for the  OpenNLP  Toolkit.", 
+            "title": "Multipurpose Engines"
+        }, 
+        {
+            "location": "/#on-line-apis", 
+            "text": "alchemyapi_ruby  -\n  Legacy Ruby SDK for AlchemyAPI/Bluemix.  wit-ruby  -\n  Ruby client library for the  Wit.ai  Language Understanding Platform.  wlapi  - Ruby client library for\n   Wortschatz Leipzig  web services.  monkeylearn-ruby  - Sentiment\n  Analysis, Topic Modelling, Language Detection, Named Entity Recognition via\n  a Ruby based Web API client.", 
+            "title": "On-line APIs"
+        }, 
+        {
+            "location": "/#language-identification", 
+            "text": "Language Identification is one of the first crucial steps in every NLP Pipeline.   scylla  -\n  Language Categorization and Identification.", 
+            "title": "Language Identification"
+        }, 
+        {
+            "location": "/#segmentation", 
+            "text": "Tools for Tokenization, Word and Sentence Boundary Detection and Disambiguation.   tokenizer  -\n  Simple multilingual tokenizer.\n   [ tutorial ]  pragmatic_tokenizer  -\n  Multilingual tokenizer to split a string into tokens.  nlp-pure  -\n  Natural language processing algorithms implemented in pure Ruby with minimal dependencies.  textoken  -\n  Simple and customizable text tokenization library.  pragmatic_segmenter  -\n  Word Boundary Disambiguation with many cookies.  punkt-segmenter  -\n  Pure Ruby implementation of the Punkt Segmenter.  tactful_tokenizer  -\n  RegExp based tokenizer for different languages.  scapel  -\n  Sentence Boundary Disambiguation tool.", 
+            "title": "Segmentation"
+        }, 
+        {
+            "location": "/#lexical-processing", 
+            "text": "", 
+            "title": "Lexical Processing"
+        }, 
+        {
+            "location": "/#stemming", 
+            "text": "Stemming is the term used in information retrieval to describe the process for\nreducing wordforms to some base representation. Stemming should be distinguished\nfrom  Lemmatization  since  stems  are not necessarily have\nlinguistic motivation.   ruby-stemmer  -\n  Ruby-Stemmer exposes the SnowBall API to Ruby.  uea-stemmer  -\n  Conservative stemmer for search and indexing.", 
+            "title": "Stemming"
+        }, 
+        {
+            "location": "/#lemmatization", 
+            "text": "Lemmatization is considered a process of finding a base form of a word. Lemmas\nare often collected in dictionaries.   lemmatizer  -\n  WordNet based Lemmatizer for English texts.", 
+            "title": "Lemmatization"
+        }, 
+        {
+            "location": "/#counting-types-and-tokens", 
+            "text": "wc  -\n  Facilities to count word occurrences in a text.  word_count  -\n  Word counter for  String  and  Hash  objects.", 
+            "title": "Counting Types and Tokens"
+        }, 
+        {
+            "location": "/#filtering-stop-words", 
+            "text": "stopwords-filter  - Filter and\n  Stop Word Lexicon based on the SnowBall lemmatizer.", 
+            "title": "Filtering Stop Words"
+        }, 
+        {
+            "location": "/#phrasal-level-processing", 
+            "text": "n_gram  -\n  N-Gram generator.  ruby-ngram  -\n  Break words and phrases into ngrams.  raingrams  -\n  Flexible and general-purpose ngrams library written in pure Ruby.", 
+            "title": "Phrasal Level Processing"
+        }, 
+        {
+            "location": "/#syntactic-processing", 
+            "text": "", 
+            "title": "Syntactic Processing"
+        }, 
+        {
+            "location": "/#constituency-parsing", 
+            "text": "stanfordparser  -\n  Ruby based wrapper for the Stanford Parser.", 
+            "title": "Constituency Parsing"
+        }, 
+        {
+            "location": "/#semantic-analysis", 
+            "text": "amatch  -\n  Set of five distance types between strings (including Levenshtein, Sellers, Jaro-Winkler, 'pair distance').  damerau-levenshtein  -\n  Calculates edit distance using the Damerau-Levenshtein algorithm.  FuzzyTools  -\n  In-memory TF/IDF fuzzy document finding with a fancy default tokenizer.  hotwater  -\n  Fast Ruby FFI string edit distance algorithms.  levenshtein-ffi  -\n  Fast string edit distance computation, using the Damerau-Levenshtein algorithm.  tf_idf  -\n  Term Frequency / Inverse Document Frequency in pure Ruby.  tf-idf-similarity  -\n  Calculate the similarity between texts using TF/IDF.", 
+            "title": "Semantic Analysis"
+        }, 
+        {
+            "location": "/#pragmatical-analysis", 
+            "text": "SentimentLib  -\n  Simple extensible sentiment analysis gem.", 
+            "title": "Pragmatical Analysis"
+        }, 
+        {
+            "location": "/#high-level-tasks", 
+            "text": "", 
+            "title": "High Level Tasks"
+        }, 
+        {
+            "location": "/#spelling-and-error-correction", 
+            "text": "gingerice  -\n  Spelling and Grammar corrections via the  Ginger  API.  hunspell-i18n  -\n  Ruby bindings to the standard  Hunspell  Spell Checker.  ffi-hunspell  -\n  FFI based Ruby bindings for  Hunspell .  hunspell  -\n  Ruby bindings to  Hunspell  via Ruby C API.", 
+            "title": "Spelling and Error Correction"
+        }, 
+        {
+            "location": "/#text-alignment", 
+            "text": "alignment  -\n  Alignment routines for bilingual texts (Gale-Church implementation).", 
+            "title": "Text Alignment"
+        }, 
+        {
+            "location": "/#machine-translation", 
+            "text": "Google API Client  -\n  Google API Ruby Client.  microsoft_translator  -\n  Ruby client for the microsoft translator API.  termit  -\n  Google Translate with speech synthesis in your terminal.", 
+            "title": "Machine Translation"
+        }, 
+        {
+            "location": "/#dialog-systems", 
+            "text": "chatterbot  -\n  Straightforward ruby-based Twitter Bot Framework, using OAuth to authenticate.  lita  -\n  chat operation bot framework written with persistent storage provided by  Redis .", 
+            "title": "Dialog Systems"
+        }, 
+        {
+            "location": "/#sentiment-analysis", 
+            "text": "stimmung  -\n  Semantic Polarity based on the\n   SentiWS  lexicon.", 
+            "title": "Sentiment Analysis"
+        }, 
+        {
+            "location": "/#numbers-dates-and-time-parsing", 
+            "text": "chronic  -\n  Pure Ruby natural language date parser.  chronic_between  -\n  Simple Ruby natural language parser for date and time ranges.  chronic_duration  -\n  Pure Ruby parser for elapsed time.  kronic  -\n  Methods for parsing and formatting human readable dates.  nickel  -\n  Extracts date, time, and message information from naturally worded text.  tickle  -\n  Parser for recurring and repeating events.  numerizer  -\n  Ruby parser for English number expressions.", 
+            "title": "Numbers, Dates, and Time Parsing"
+        }, 
+        {
+            "location": "/#named-entity-recognition", 
+            "text": "ruby-ner  -\n  Named Entity Recognition with Stanford NER and Ruby.  ruby-nlp  -\n  Ruby Binding for Stanford Pos-Tagger and Name Entity Recognizer.", 
+            "title": "Named Entity Recognition"
+        }, 
+        {
+            "location": "/#text-to-speech-to-text", 
+            "text": "espeak-ruby  -\n  Small Ruby API for utilizing 'espeak' and 'lame' to create text-to-speech mp3 files.  tts  -\n  Text-to-Speech conversion using the Google translate service.  att_speech  -\n  Ruby wrapper over the AT T Speech API for speech to text.  pocketsphinx-ruby  -\n  Pocketsphinx bindings.", 
+            "title": "Text-to-Speech-to-Text"
+        }, 
+        {
+            "location": "/#linguistic-resources", 
+            "text": "rwordnet  -\n  Pure Ruby self contained API library for the  Princeton WordNet\u00ae .  wordnet  -\n  Performance tuned bindings for the  Princeton WordNet\u00ae .", 
+            "title": "Linguistic Resources"
+        }, 
+        {
+            "location": "/#machine-learning-libraries", 
+            "text": "Machine Learning  Algorithms\nin pure Ruby or written in other programming languages with appropriate bindings\nfor Ruby.   rb-libsvm  -\n  Support Vector Machines with Ruby.  weka-jruby  -\n  JRuby bindings for Weka, different ML algorithms implemented through Weka.  decisiontree  -\n  Decision Tree ID3 Algorithm in pure Ruby\n   [ post ] .  rtimbl  -\n  Memory based learners from the Timbl framework.  classifier-reborn  -\n  General classifier module to allow Bayesian and other types of classifications.  lda-ruby  -\n  Ruby implementation of the  LDA \n  (Latent Dirichlet Allocation) for automatic Topic Modelling and Document Clustering.  liblinear-ruby-swig  -\n  Ruby interface to LIBLINEAR (much more efficient than LIBSVM for text classification).  linnaeus  -\n  Redis-backed Bayesian classifier.  maxent_string_classifier  -\n  JRuby maximum entropy classifier for string data, based on the OpenNLP Maxent framework.  naive_bayes  -\n  Simple Naive Bayes classifier.  nbayes  -\n  Full-featured, Ruby implementation of Naive Bayes.  omnicat  -\n  Generalized rack framework for text classifications.  omnicat-bayes  -\n  Naive Bayes text classification implementation as an OmniCat classifier strategy.  ruby-fann  -\n  Ruby bindings to the  Fast Artificial Neural Network Library (FANN) .", 
+            "title": "Machine Learning Libraries"
+        }, 
+        {
+            "location": "/#full-text-search-information-retrieval-indexing", 
+            "text": "rsolr  -\n  Ruby and Rails client library for  Apache Solr .  sunspot  -\n  Rails centric client for  Apache Solr .  thinking-sphinx  -\n   Active Record \n  plugin for using  Sphinx  in (not only) Rails based projects.  elasticsearch  -\n  Ruby client and API for  Elasticsearch .  elasticsearch-rails  -\n  Ruby and Rails integrations for  Elasticsearch .", 
+            "title": "Full Text Search, Information Retrieval, Indexing"
+        }, 
+        {
+            "location": "/#language-aware-string-manipulation", 
+            "text": "Libraries for language aware string manipulation, i.e. search, pattern matching,\ncase conversion, transcoding, regular expressions which need information about\nthe underlying language.   FuzzyMatch  -\n  find a needle in a haystack based on string similarity and regular expression rules.  fuzzy-string-match  -\n  Fuzzy string matching library for Ruby.  active_support  -\n  RoR  ActiveSupport  gem has various string extensions that can handle case.  u  -\n  U extends Ruby\u2019s Unicode support.  unicode  -\n  Unicode normalization library.  CommonRegexRuby  -\n  Find a lot of kinds of common information in a string.  regexp-examples  -\n  Generate strings that match a given regular expression.  verbal_expressions  -\n  Make difficult regular expressions easy.", 
+            "title": "Language Aware String Manipulation"
+        }, 
+        {
+            "location": "/#articles-posts-talks-and-presentations", 
+            "text": "2017  Scientific Computing on JRuby  by  Prasun Anand \n     [ slides  |\n     video  |\n     slides  |\n     slides ]  Unicode Normalization in Ruby  by  Starr Horne \n     [ post ]  2016  Quickly Create a Telegram Bot in Ruby  by  Ardian Haxha \n     [ tutorial ]  Deep Learning: An Introduction for Ruby Developers  by  Geoffrey Litt \n     [ slides ]  How I made a pure-Ruby word2vec program more than 3x faster  by  Kei Sawada \n     [ slides ]  D\u014dmo arigat\u014d, Mr. Roboto: Machine Learning with Ruby  by  Eric Weinstein \n     [ slides  |  video ]  2015  N-gram Analysis for Fun and Profit  by  Jesus Castello \n     [ tutorial ]  Machine Learning made simple with Ruby  by  Lorenzo Masini \n     [ tutorial ]  Using Ruby Machine Learning to Find Paris Hilton Quotes  by  Rick Carlino \n     [ tutorial ]  Exploring Natural Language Processing in Ruby  by  Kevin Dias \n     [ slides ]  Machine Learning made simple with Ruby  by  Lorenzo Masini \n     [ post ]  Practical Data Science in Ruby  by Bobby Grayson\n     [ slides ]  2014  Natural Language Parsing with Ruby  by  Glauco Cust\u00f3dio \n     [ tutorial ]  Demystifying Data Science: Analyzing Conference Talks with Rails and Ngrams  by\n     Todd Schneider \n     [ video  |  code ]  Natural Language Processing with Ruby  by  Konstantin Tennhard \n     [ video  |  video  |\n     video  |\n     slides ]  2013  How to parse 'go' - Natural Language Processing in Ruby  by\n     Tom Cartwright \n     [ slides  |\n     video ]  Natural Language Processing in Ruby  by  Brandon Black \n     [ slides  |\n     video ]  Natural Language Processing with Ruby: n-grams  by  Nathan Kleyn \n     [ tutorial  |\n     code ]  Seeking Lovecraft, Part 1: An introduction to NLP and the Treat Gem  by\n     Robert Qualls \n     [ tutorial ]  2012  Machine Learning with Ruby, Part One  by  Vasily Vasinov \n     [ tutorial ]  2011  Ruby one-liners  by  Benoit Hamelin \n     [ post ]  Clustering in Ruby  by  Colin Drake \n     [ post ]  2010  bayes_motel \u2013 Bayesian classification for Ruby  by  Mike Perham \n     [ post ]  2009  Porting the UEA-Lite Stemmer to Ruby  by  Jason Adams \n     [ post ]  NLP Resources for Ruby  by  Jason Adams \n     [ post ]  2008  Support Vector Machines (SVM) in Ruby  by  Ilya Grigorik \n     [ post ]  Practical text classification with Ruby  by  Gleicon Moraes \n     [ post  |\n     code ]  2007  Decision Tree Learning in Ruby  by  Ilya Grigorik \n     [ post ]", 
+            "title": "Articles, Posts, Talks, and Presentations"
+        }, 
+        {
+            "location": "/#projects-and-code-examples", 
+            "text": "Going the Distance  -\n  Implementations of various distance algorithms with example calculations.  Named entity recognition with Stanford NER and Ruby  -\n  NER Examples in Ruby and Java with some  explanations .", 
+            "title": "Projects and Code Examples"
+        }, 
+        {
+            "location": "/#books", 
+            "text": "Miller, Rob .\n    Text Processing with Ruby: Extract Value from the Data That Surrounds You. \n   Pragmatic Programmers, 2015.\n    [ link ]  Watson, Mark .\n    Scripting Intelligence: Web 3.0 Information Gathering and Processing. \n   APRESS, 2010.\n    [ link ]  Watson, Mark .\n    Practical Semantic Web and Linked Data Applications.  Lulu, 2010.\n    [ link ]", 
+            "title": "Books"
+        }, 
+        {
+            "location": "/#community", 
+            "text": "Reddit  Stack Overflow  Twitter", 
+            "title": "Community"
+        }, 
+        {
+            "location": "/#needs-your-help", 
+            "text": "All projects in this section are really important for the community but need\nmore attention. Please if you have spare time and dedication spend some hours\non the code here.   ferret  -\n  Information Retrieval in C and Ruby.", 
+            "title": "Needs your Help!"
+        }, 
+        {
+            "location": "/#related-resources", 
+            "text": "Awesome Ruby  -\n  Among other awesome items a short list of NLP related projects.  Ruby NLP  -\n  State-of-Art collection of Ruby libraries for NLP.  Speech and Natural Language Processing  -\n  General List of NLP related resources (mostly not for Ruby programmers).  Scientific Ruby  -\n  Linear Algebra, Visualization and Scientific Computing for Ruby.  iRuby  - IRuby kernel for Jupyter (formelly IPython).  Kiba  -\n  Lightweight  ETL  (Extract, Transform, Load) pipeline.  Awesome OCR  -\n  Multitude of OCR (Optical Character Recognition) resources.  Awesome TensorFlow  -\n  Machine Learning with TensorFlow libraries.  rb-gsl  -\n  Ruby interface to the  GNU Scientific Library .  The Definitive Guide to Ruby's C API  -\n  Modern Reference and Tutorial on Embedding and Extending Ruby using C programming language.", 
+            "title": "Related Resources"
+        }, 
+        {
+            "location": "/#contributing", 
+            "text": "We are very glad to see you in this section and highly appreciate any help!  But we also take care about the quality of this list. If you want to contribute\nplease:   agree that your work will be published under the terms of the  CC0  license;  carefully read the  Contribution Guidelines .   Some of the open tasks for contributors are listed in the  todo file .\nYou may want to start there.", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/#license", 
+            "text": "Awesome NLP with Ruby  by  Andrei Beliankou  and Contributors .  To the extent possible under law, the person who associated CC0 with Awesome NLP with Ruby  has waived all copyright and related or neighboring rights\nto  Awesome NLP with Ruby .  You should have received a copy of the CC0 legalcode along with this\nwork. If not, see  https://creativecommons.org/publicdomain/zero/1.0/ .", 
+            "title": "License"
+        }, 
+        {
+            "location": "/FAQ/", 
+            "text": "Frequently (not yet) Asked Questions\n\n\nWhat is Awesome Ruby NLP list?\n\n\nThis list is the \nfirst systematic\n attempt to enlist NLP and CL related\nresources for Ruby. It's based on other earlier attempts\ne.g. https://github.com/diasks2/ruby-nlp. We strive to provide a list of only\nworking high quality libraries. Read \nwhy\n this list is vital for\nthe Ruby community.\n\n\nWhy use Ruby for NLP?\n\n\nEverybody uses Python! Nobody hires Ruby developers for NLP tasks.\n\n\nTo avoid a long discussion we can simply postulate: Ruby and Python are great\nprogramming languages, both very appealing to the community, but with different\nhistory. Everything written in Ruby could have been written in Python.\n\n\nNevertheless we have our personal preferences like dogs over cats,\ntea over coffee etc. That's why you can choose the language which matches\nyour mindset and does not break your mind to get compliant with a programming\nlanguage.\n\n\nTake Ruby if you're happy with it. Use Python if you like it more. Do whatever\nyou want and pay for your decisions!\n\n\nAnd if you still hesitate look at this great\n\ntalk\n by Jim Weirich.\n\n\nWait ... but Ruby is so slow?\n\n\nRuby \nIS\n comparable in terms of processing speed with other high level\nscripting programming languages like Lua, Perl, Python etc.\n\n\nPlease look at this comparison:\nhttp://benchmarksgame.alioth.debian.org/u64q/which-programs-are-fastest.html\n\n\nHm ... but would I find suitable libraries?\n\n\nPython has more! Eventually...\n\n\nPlease look at the current \nlist\n,\nRuby is equipped with all important libraries.\n\n\nCan I write NLP application on the Google's scale with Ruby?\n\n\nThe answer is simple and sounds \"NO\". Not in pure Ruby. But you can be very\nefficient and use Ruby bindings for Java, C and C++ based libraries.\nAnd sometimes buying newer hardware can be cheaper than writing everything in\nC++. It's definitely your choice!\n\n\nHow do you call list items?\n\n\nEvery library list item has the naming after the Ruby library. The name is\nthe exact wording of the \ngem install lib\n statement (or \ngem 'lib'\n in your\n\nGemfile\n) to facilitate search and memoization. That's why the appropriate item\nis called \ntreat\n and not \nTreat\n.", 
+            "title": "FAQ"
+        }, 
+        {
+            "location": "/FAQ/#frequently-not-yet-asked-questions", 
+            "text": "", 
+            "title": "Frequently (not yet) Asked Questions"
+        }, 
+        {
+            "location": "/FAQ/#what-is-awesome-ruby-nlp-list", 
+            "text": "This list is the  first systematic  attempt to enlist NLP and CL related\nresources for Ruby. It's based on other earlier attempts\ne.g. https://github.com/diasks2/ruby-nlp. We strive to provide a list of only\nworking high quality libraries. Read  why  this list is vital for\nthe Ruby community.", 
+            "title": "What is Awesome Ruby NLP list?"
+        }, 
+        {
+            "location": "/FAQ/#why-use-ruby-for-nlp", 
+            "text": "Everybody uses Python! Nobody hires Ruby developers for NLP tasks.  To avoid a long discussion we can simply postulate: Ruby and Python are great\nprogramming languages, both very appealing to the community, but with different\nhistory. Everything written in Ruby could have been written in Python.  Nevertheless we have our personal preferences like dogs over cats,\ntea over coffee etc. That's why you can choose the language which matches\nyour mindset and does not break your mind to get compliant with a programming\nlanguage.  Take Ruby if you're happy with it. Use Python if you like it more. Do whatever\nyou want and pay for your decisions!  And if you still hesitate look at this great talk  by Jim Weirich.", 
+            "title": "Why use Ruby for NLP?"
+        }, 
+        {
+            "location": "/FAQ/#wait-but-ruby-is-so-slow", 
+            "text": "Ruby  IS  comparable in terms of processing speed with other high level\nscripting programming languages like Lua, Perl, Python etc.  Please look at this comparison:\nhttp://benchmarksgame.alioth.debian.org/u64q/which-programs-are-fastest.html", 
+            "title": "Wait ... but Ruby is so slow?"
+        }, 
+        {
+            "location": "/FAQ/#hm-but-would-i-find-suitable-libraries", 
+            "text": "Python has more! Eventually...  Please look at the current  list ,\nRuby is equipped with all important libraries.", 
+            "title": "Hm ... but would I find suitable libraries?"
+        }, 
+        {
+            "location": "/FAQ/#can-i-write-nlp-application-on-the-googles-scale-with-ruby", 
+            "text": "The answer is simple and sounds \"NO\". Not in pure Ruby. But you can be very\nefficient and use Ruby bindings for Java, C and C++ based libraries.\nAnd sometimes buying newer hardware can be cheaper than writing everything in\nC++. It's definitely your choice!", 
+            "title": "Can I write NLP application on the Google's scale with Ruby?"
+        }, 
+        {
+            "location": "/FAQ/#how-do-you-call-list-items", 
+            "text": "Every library list item has the naming after the Ruby library. The name is\nthe exact wording of the  gem install lib  statement (or  gem 'lib'  in your Gemfile ) to facilitate search and memoization. That's why the appropriate item\nis called  treat  and not  Treat .", 
+            "title": "How do you call list items?"
+        }, 
+        {
+            "location": "/motivation/", 
+            "text": "Wait but why?\n\n\nThere are a lot of software lists with NLP tools. There are a couple of lists\nwith Ruby related projects. There are no lists of only working and tested\nsoftware with documented scope. We'll try to make one!\n\n\nWhat is awesome? Awesome are documented, maintained and focused tools.\n\n\nCan something turn not awesome at a point? Yes! Abandoned projects with broken\ndependencies aren't awesome any more! They leave this list.", 
+            "title": "Motivation"
+        }, 
+        {
+            "location": "/motivation/#wait-but-why", 
+            "text": "There are a lot of software lists with NLP tools. There are a couple of lists\nwith Ruby related projects. There are no lists of only working and tested\nsoftware with documented scope. We'll try to make one!  What is awesome? Awesome are documented, maintained and focused tools.  Can something turn not awesome at a point? Yes! Abandoned projects with broken\ndependencies aren't awesome any more! They leave this list.", 
+            "title": "Wait but why?"
+        }
+    ]
+}

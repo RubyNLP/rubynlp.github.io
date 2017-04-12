@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Practical Natural Language Processing with Ruby">
+        <meta name="author" content="Andrei Beliankou">
+        <link rel="canonical" href="http://rubynlp.org/">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+        <title>Awesome RubyNLP</title>
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-91420426-1', 'rubynlp.org');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=".">Awesome RubyNLP</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href=".">Home</a>
+                    </li>
+                    <li >
+                        <a href="FAQ/">FAQ</a>
+                    </li>
+                    <li >
+                        <a href="motivation/">Motivation</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li class="disabled">
+                        <a rel="next" >
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="FAQ/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/arbox/nlp-with-ruby">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#awesome-nlp-with-ruby">Awesome NLP with Ruby</a></li>
+            <li><a href="#nlp-pipeline-subtasks">NLP Pipeline Subtasks</a></li>
+            <li><a href="#high-level-tasks">High Level Tasks</a></li>
+            <li><a href="#linguistic-resources">Linguistic Resources</a></li>
+            <li><a href="#machine-learning-libraries">Machine Learning Libraries</a></li>
+            <li><a href="#full-text-search-information-retrieval-indexing">Full Text Search, Information Retrieval, Indexing</a></li>
+            <li><a href="#language-aware-string-manipulation">Language Aware String Manipulation</a></li>
+            <li><a href="#articles-posts-talks-and-presentations">Articles, Posts, Talks, and Presentations</a></li>
+            <li><a href="#projects-and-code-examples">Projects and Code Examples</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#needs-your-help">Needs your Help!</a></li>
+            <li><a href="#related-resources">Related Resources</a></li>
+            <li><a href="#contributing">Contributing</a></li>
+            <li><a href="#license">License</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="awesome-nlp-with-ruby">Awesome NLP with Ruby <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/arbox/nlp-with-ruby"><img alt="Awesome RubyNLP" src="https://img.shields.io/badge/Awesome-RubyNLP-brightgreen.svg" /></a></h1>
+<p><a href="https://www.ruby-lang.org/en/"><img src="ruby.jpg" align="right" width="100px" height="100px" /></a></p>
+<blockquote>
+<p>Useful resources for text processing in <a href="https://www.ruby-lang.org/en/">Ruby</a></p>
+</blockquote>
+<p>This curated list comprises <a href="https://github.com/sindresorhus/awesome/blob/master/awesome.md"><em>awesome</em></a>
+resources, libraries, information sources about computational processing of texts
+in human languages with the <a href="./ruby">Ruby programming language</a>.
+That field is often referred to as
+<a href="https://en.wikipedia.org/wiki/Natural_language_processing">NLP</a>,
+<a href="https://en.wikipedia.org/wiki/Computational_linguistics">Computational Linguistics</a>,
+<a href="https://en.wikipedia.org/wiki/Language_technology">HLT</a> (Human Language Technology)
+and can be brought in conjunction with
+<a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Artificial Intelligence</a>,
+<a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a>,
+<a href="https://en.wikipedia.org/wiki/Information_retrieval">Information Retrieval</a>,
+<a href="https://en.wikipedia.org/wiki/Text_mining">Text Mining</a>,
+<a href="https://en.wikipedia.org/wiki/Knowledge_extraction">Knowledge Extraction</a>
+and other related disciplines.</p>
+<p>This list comes from our day to day work on Language Models and NLP Tools.
+Read <a href="motivation/">why</a> this list is awesome. Our <a href="FAQ/">FAQ</a> describes the
+important decisions and useful answers you may be interested in.</p>
+<p>Our main goal is to promote Ruby as a tool for NLP related tasks. Your help,
+suggestions and contributions are welcome! We kindly ask you to study
+the <a href="#contributing">Contribution</a> section. Follow us on <a href="https://twitter.com/RubyNLP">Twitter</a>
+and please spread the word using the <code>#RubyNLP</code> hash tag!</p>
+<h2 id="nlp-pipeline-subtasks">NLP Pipeline Subtasks</h2>
+<h3 id="pipeline-generation">Pipeline Generation</h3>
+<ul>
+<li><a href="https://github.com/t6d/composable_operations">composable_operations</a> -
+  Definition framework for operation pipelines.</li>
+<li><a href="https://github.com/ondra-m/ruby-spark">ruby-spark</a> -
+  Spark bindings with an easy to understand DSL.</li>
+<li><a href="https://github.com/klarna/phobos">phobos</a> -
+  Simplified Ruby Client for <a href="https://kafka.apache.org/">Apache Kafka</a>.</li>
+</ul>
+<h3 id="multipurpose-engines">Multipurpose Engines</h3>
+<ul>
+<li><a href="https://github.com/louismullie/open-nlp">open-nlp</a> -
+  Ruby Bindings for the <a href="https://opennlp.apache.org/">OpenNLP</a> Toolkit.</li>
+<li><a href="https://github.com/louismullie/stanford-core-nlp">stanford-core-nlp</a> -
+  Ruby Bindings for the Stanford <a href="https://github.com/stanfordnlp/CoreNLP">CoreNLP</a> tools.</li>
+<li><a href="https://github.com/louismullie/treat">treat</a> -
+  Natural Language Processing framework for Ruby (like <a href="http://www.nltk.org/">NLTK</a> for Python).</li>
+<li><a href="https://github.com/LeFnord/nlp_toolz">nlp_toolz</a> -
+  Wrapper over some <a href="https://opennlp.apache.org/">OpenNLP</a> classes and
+  the original <a href="https://github.com/slavpetrov/berkeleyparser">Berkeley Parser</a>.</li>
+<li><a href="https://github.com/hck/open_nlp">open_nlp</a> -
+  JRuby Bindings for the <a href="https://opennlp.apache.org/">OpenNLP</a> Toolkit.</li>
+</ul>
+<h4 id="on-line-apis">On-line APIs</h4>
+<ul>
+<li><a href="https://github.com/alchemyapi/alchemyapi_ruby">alchemyapi_ruby</a> -
+  Legacy Ruby SDK for AlchemyAPI/Bluemix.</li>
+<li><a href="https://github.com/wit-ai/wit-ruby">wit-ruby</a> -
+  Ruby client library for the <a href="https://wit.ai/">Wit.ai</a> Language Understanding Platform.</li>
+<li><a href="https://github.com/arbox/wlapi">wlapi</a> - Ruby client library for
+  <a href="http://wortschatz.uni-leipzig.de/de">Wortschatz Leipzig</a> web services.</li>
+<li><a href="https://github.com/monkeylearn/monkeylearn-ruby">monkeylearn-ruby</a> - Sentiment
+  Analysis, Topic Modelling, Language Detection, Named Entity Recognition via
+  a Ruby based Web API client.</li>
+</ul>
+<h3 id="language-identification">Language Identification</h3>
+<p>Language Identification is one of the first crucial steps in every NLP Pipeline.</p>
+<ul>
+<li><a href="https://github.com/hashwin/scylla">scylla</a> -
+  Language Categorization and Identification.</li>
+</ul>
+<h3 id="segmentation">Segmentation</h3>
+<p>Tools for Tokenization, Word and Sentence Boundary Detection and Disambiguation.</p>
+<ul>
+<li><a href="https://github.com/arbox/tokenizer">tokenizer</a> -
+  Simple multilingual tokenizer.
+  <sup>[<a href="tutorials/tokenizer.md">tutorial</a>]</sup></li>
+<li><a href="https://github.com/diasks2/pragmatic_tokenizer">pragmatic_tokenizer</a> -
+  Multilingual tokenizer to split a string into tokens.</li>
+<li><a href="https://github.com/parhamr/nlp-pure">nlp-pure</a> -
+  Natural language processing algorithms implemented in pure Ruby with minimal dependencies.</li>
+<li><a href="https://github.com/manorie/textoken">textoken</a> -
+  Simple and customizable text tokenization library.</li>
+<li><a href="https://github.com/diasks2/pragmatic_segmenter">pragmatic_segmenter</a> -
+  Word Boundary Disambiguation with many cookies.</li>
+<li><a href="https://github.com/lfcipriani/punkt-segmenter">punkt-segmenter</a> -
+  Pure Ruby implementation of the Punkt Segmenter.</li>
+<li><a href="https://github.com/zencephalon/Tactful_Tokenizer">tactful_tokenizer</a> -
+  RegExp based tokenizer for different languages.</li>
+<li><a href="https://github.com/louismullie/scalpel">scapel</a> -
+  Sentence Boundary Disambiguation tool.</li>
+</ul>
+<h3 id="lexical-processing">Lexical Processing</h3>
+<h4 id="stemming">Stemming</h4>
+<p>Stemming is the term used in information retrieval to describe the process for
+reducing wordforms to some base representation. Stemming should be distinguished
+from <a href="#lemmatization">Lemmatization</a> since <code>stems</code> are not necessarily have
+linguistic motivation.</p>
+<ul>
+<li><a href="https://github.com/aurelian/ruby-stemmer">ruby-stemmer</a> -
+  Ruby-Stemmer exposes the SnowBall API to Ruby.</li>
+<li><a href="https://github.com/ealdent/uea-stemmer">uea-stemmer</a> -
+  Conservative stemmer for search and indexing.</li>
+</ul>
+<h4 id="lemmatization">Lemmatization</h4>
+<p>Lemmatization is considered a process of finding a base form of a word. Lemmas
+are often collected in dictionaries.</p>
+<ul>
+<li><a href="https://github.com/yohasebe/lemmatizer">lemmatizer</a> -
+  WordNet based Lemmatizer for English texts.</li>
+</ul>
+<h4 id="counting-types-and-tokens">Counting Types and Tokens</h4>
+<ul>
+<li><a href="https://github.com/thesp0nge/wc">wc</a> -
+  Facilities to count word occurrences in a text.</li>
+<li><a href="https://github.com/AtelierConvivialite/word_count">word_count</a> -
+  Word counter for <code>String</code> and <code>Hash</code> objects.</li>
+</ul>
+<h4 id="filtering-stop-words">Filtering Stop Words</h4>
+<ul>
+<li><a href="https://github.com/brenes/stopwords-filter">stopwords-filter</a> - Filter and
+  Stop Word Lexicon based on the SnowBall lemmatizer.</li>
+</ul>
+<h3 id="phrasal-level-processing">Phrasal Level Processing</h3>
+<ul>
+<li><a href="https://github.com/reddavis/N-Gram">n_gram</a> -
+  N-Gram generator.</li>
+<li><a href="https://github.com/tkellen/ruby-ngram">ruby-ngram</a> -
+  Break words and phrases into ngrams.</li>
+<li><a href="https://github.com/postmodern/raingrams">raingrams</a> -
+  Flexible and general-purpose ngrams library written in pure Ruby.</li>
+</ul>
+<h3 id="syntactic-processing">Syntactic Processing</h3>
+<h4 id="constituency-parsing">Constituency Parsing</h4>
+<ul>
+<li><a href="https://rubygems.org/gems/stanfordparser">stanfordparser</a> -
+  Ruby based wrapper for the Stanford Parser.</li>
+</ul>
+<h3 id="semantic-analysis">Semantic Analysis</h3>
+<ul>
+<li><a href="https://github.com/flori/amatch">amatch</a> -
+  Set of five distance types between strings (including Levenshtein, Sellers, Jaro-Winkler, 'pair distance').</li>
+<li><a href="https://github.com/GlobalNamesArchitecture/damerau-levenshtein">damerau-levenshtein</a> -
+  Calculates edit distance using the Damerau-Levenshtein algorithm.</li>
+<li><a href="https://github.com/brianhempel/fuzzy_tools">FuzzyTools</a> -
+  In-memory TF/IDF fuzzy document finding with a fancy default tokenizer.</li>
+<li><a href="https://github.com/colinsurprenant/hotwater">hotwater</a> -
+  Fast Ruby FFI string edit distance algorithms.</li>
+<li><a href="https://github.com/dbalatero/levenshtein-ffi">levenshtein-ffi</a> -
+  Fast string edit distance computation, using the Damerau-Levenshtein algorithm.</li>
+<li><a href="https://github.com/reddavis/TF-IDF">tf_idf</a> -
+  Term Frequency / Inverse Document Frequency in pure Ruby.</li>
+<li><a href="https://github.com/jpmckinney/tf-idf-similarity">tf-idf-similarity</a> -
+  Calculate the similarity between texts using TF/IDF.</li>
+</ul>
+<h3 id="pragmatical-analysis">Pragmatical Analysis</h3>
+<ul>
+<li><a href="https://github.com/nzaillian/sentiment_lib">SentimentLib</a> -
+  Simple extensible sentiment analysis gem.</li>
+</ul>
+<h2 id="high-level-tasks">High Level Tasks</h2>
+<h3 id="spelling-and-error-correction">Spelling and Error Correction</h3>
+<ul>
+<li><a href="https://github.com/subosito/gingerice">gingerice</a> -
+  Spelling and Grammar corrections via the <a href="http://www.gingersoftware.com/">Ginger</a> API.</li>
+<li><a href="https://github.com/romanbsd/hunspell">hunspell-i18n</a> -
+  Ruby bindings to the standard <a href="https://hunspell.github.io/">Hunspell</a> Spell Checker.</li>
+<li><a href="https://github.com/postmodern/ffi-hunspell">ffi-hunspell</a> -
+  FFI based Ruby bindings for <a href="https://hunspell.github.io/">Hunspell</a>.</li>
+<li><a href="https://github.com/segabor/Hunspell">hunspell</a> -
+  Ruby bindings to <a href="https://hunspell.github.io/">Hunspell</a> via Ruby C API.</li>
+</ul>
+<h3 id="text-alignment">Text Alignment</h3>
+<ul>
+<li><a href="https://github.com/povilasjurcys/alignment">alignment</a> -
+  Alignment routines for bilingual texts (Gale-Church implementation).</li>
+</ul>
+<h3 id="machine-translation">Machine Translation</h3>
+<ul>
+<li><a href="https://github.com/google/google-api-ruby-client">Google API Client</a> -
+  Google API Ruby Client.</li>
+<li><a href="https://github.com/ikayzo/microsoft_translator">microsoft_translator</a> -
+  Ruby client for the microsoft translator API.</li>
+<li><a href="https://github.com/pawurb/termit">termit</a> -
+  Google Translate with speech synthesis in your terminal.</li>
+</ul>
+<h3 id="dialog-systems">Dialog Systems</h3>
+<ul>
+<li><a href="https://github.com/muffinista/chatterbot">chatterbot</a> -
+  Straightforward ruby-based Twitter Bot Framework, using OAuth to authenticate.</li>
+<li><a href="https://github.com/litaio/lita">lita</a> -
+  chat operation bot framework written with persistent storage provided by <a href="https://redis.io/">Redis</a>.</li>
+</ul>
+<h3 id="sentiment-analysis">Sentiment Analysis</h3>
+<ul>
+<li><a href="https://github.com/pachacamac/stimmung">stimmung</a> -
+  Semantic Polarity based on the
+  <a href="http://wortschatz.uni-leipzig.de/en/download">SentiWS</a> lexicon.</li>
+</ul>
+<h3 id="numbers-dates-and-time-parsing">Numbers, Dates, and Time Parsing</h3>
+<ul>
+<li><a href="https://github.com/mojombo/chronic">chronic</a> -
+  Pure Ruby natural language date parser.</li>
+<li><a href="https://github.com/jrobertson/chronic_between">chronic_between</a> -
+  Simple Ruby natural language parser for date and time ranges.</li>
+<li><a href="https://github.com/henrypoydar/chronic_duration">chronic_duration</a> -
+  Pure Ruby parser for elapsed time.</li>
+<li><a href="https://github.com/xaviershay/kronic">kronic</a> -
+  Methods for parsing and formatting human readable dates.</li>
+<li><a href="https://github.com/iainbeeston/nickel">nickel</a> -
+  Extracts date, time, and message information from naturally worded text.</li>
+<li><a href="https://github.com/yb66/tickle">tickle</a> -
+  Parser for recurring and repeating events.</li>
+<li><a href="https://github.com/jduff/numerizer">numerizer</a> -
+  Ruby parser for English number expressions.</li>
+</ul>
+<h3 id="named-entity-recognition">Named Entity Recognition</h3>
+<ul>
+<li><a href="https://github.com/mblongii/ruby-ner">ruby-ner</a> -
+  Named Entity Recognition with Stanford NER and Ruby.</li>
+<li><a href="https://github.com/tiendung/ruby-nlp">ruby-nlp</a> -
+  Ruby Binding for Stanford Pos-Tagger and Name Entity Recognizer.</li>
+</ul>
+<h3 id="text-to-speech-to-text">Text-to-Speech-to-Text</h3>
+<ul>
+<li><a href="https://github.com/dejan/espeak-ruby">espeak-ruby</a> -
+  Small Ruby API for utilizing 'espeak' and 'lame' to create text-to-speech mp3 files.</li>
+<li><a href="https://github.com/c2h2/tts">tts</a> -
+  Text-to-Speech conversion using the Google translate service.</li>
+<li><a href="https://github.com/adhearsion/att_speech">att_speech</a> -
+  Ruby wrapper over the AT&amp;T Speech API for speech to text.</li>
+<li><a href="https://github.com/watsonbox/pocketsphinx-ruby">pocketsphinx-ruby</a> -
+  Pocketsphinx bindings.</li>
+</ul>
+<h2 id="linguistic-resources">Linguistic Resources</h2>
+<ul>
+<li><a href="https://github.com/doches/rwordnet">rwordnet</a> -
+  Pure Ruby self contained API library for the <a href="https://wordnet.princeton.edu/">Princeton WordNet®</a>.</li>
+<li><a href="https://github.com/ged/ruby-wordnet/blob/master/README.rdoc">wordnet</a> -
+  Performance tuned bindings for the <a href="https://wordnet.princeton.edu/">Princeton WordNet®</a>.</li>
+</ul>
+<h2 id="machine-learning-libraries">Machine Learning Libraries</h2>
+<p><a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a> Algorithms
+in pure Ruby or written in other programming languages with appropriate bindings
+for Ruby.</p>
+<ul>
+<li><a href="https://github.com/febeling/rb-libsvm">rb-libsvm</a> -
+  Support Vector Machines with Ruby.</li>
+<li><a href="https://github.com/paulgoetze/weka-jruby">weka-jruby</a> -
+  JRuby bindings for Weka, different ML algorithms implemented through Weka.</li>
+<li><a href="https://github.com/igrigorik/decisiontree">decisiontree</a> -
+  Decision Tree ID3 Algorithm in pure Ruby
+  <sup>[<a href="https://www.igvita.com/2007/04/16/decision-tree-learning-in-ruby/">post</a>]</sup>.</li>
+<li><a href="https://github.com/maspwr/rtimbl">rtimbl</a> -
+  Memory based learners from the Timbl framework.</li>
+<li><a href="https://github.com/jekyll/classifier-reborn">classifier-reborn</a> -
+  General classifier module to allow Bayesian and other types of classifications.</li>
+<li><a href="https://github.com/ealdent/lda-ruby">lda-ruby</a> -
+  Ruby implementation of the <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">LDA</a>
+  (Latent Dirichlet Allocation) for automatic Topic Modelling and Document Clustering.</li>
+<li><a href="https://github.com/tomz/liblinear-ruby-swig">liblinear-ruby-swig</a> -
+  Ruby interface to LIBLINEAR (much more efficient than LIBSVM for text classification).</li>
+<li><a href="https://github.com/djcp/linnaeus">linnaeus</a> -
+  Redis-backed Bayesian classifier.</li>
+<li><a href="https://github.com/mccraigmccraig/maxent_string_classifier">maxent_string_classifier</a> -
+  JRuby maximum entropy classifier for string data, based on the OpenNLP Maxent framework.</li>
+<li><a href="https://github.com/reddavis/Naive-Bayes">naive_bayes</a> -
+  Simple Naive Bayes classifier.</li>
+<li><a href="https://github.com/oasic/nbayes">nbayes</a> -
+  Full-featured, Ruby implementation of Naive Bayes.</li>
+<li><a href="https://github.com/mustafaturan/omnicat">omnicat</a> -
+  Generalized rack framework for text classifications.</li>
+<li><a href="https://github.com/mustafaturan/omnicat-bayes">omnicat-bayes</a> -
+  Naive Bayes text classification implementation as an OmniCat classifier strategy.</li>
+<li><a href="https://github.com/tangledpath/ruby-fann">ruby-fann</a> -
+  Ruby bindings to the <a href="http://leenissen.dk/fann/wp/">Fast Artificial Neural Network Library (FANN)</a>.</li>
+</ul>
+<h2 id="full-text-search-information-retrieval-indexing">Full Text Search, Information Retrieval, Indexing</h2>
+<ul>
+<li><a href="https://github.com/rsolr/rsolr">rsolr</a> -
+  Ruby and Rails client library for <a href="http://lucene.apache.org/solr/">Apache Solr</a>.</li>
+<li><a href="https://github.com/sunspot/sunspot">sunspot</a> -
+  Rails centric client for <a href="http://lucene.apache.org/solr/">Apache Solr</a>.</li>
+<li><a href="https://github.com/pat/thinking-sphinx">thinking-sphinx</a> -
+  <a href="http://guides.rubyonrails.org/active_record_basics.html#what-is-active-record-questionmark">Active Record</a>
+  plugin for using <a href="http://sphinxsearch.com/">Sphinx</a> in (not only) Rails based projects.</li>
+<li><a href="https://github.com/elastic/elasticsearch-ruby/tree/master/elasticsearch">elasticsearch</a> -
+  Ruby client and API for <a href="https://www.elastic.co/">Elasticsearch</a>.</li>
+<li><a href="https://github.com/elastic/elasticsearch-rails">elasticsearch-rails</a> -
+  Ruby and Rails integrations for <a href="https://www.elastic.co/">Elasticsearch</a>.</li>
+</ul>
+<h2 id="language-aware-string-manipulation">Language Aware String Manipulation</h2>
+<p>Libraries for language aware string manipulation, i.e. search, pattern matching,
+case conversion, transcoding, regular expressions which need information about
+the underlying language.</p>
+<ul>
+<li><a href="https://github.com/seamusabshere/fuzzy_match">FuzzyMatch</a> -
+  find a needle in a haystack based on string similarity and regular expression rules.</li>
+<li><a href="https://github.com/kiyoka/fuzzy-string-match">fuzzy-string-match</a> -
+  Fuzzy string matching library for Ruby.</li>
+<li><a href="https://github.com/rails/rails/tree/master/activesupport/lib/active_support">active_support</a> -
+  RoR <code>ActiveSupport</code> gem has various string extensions that can handle case.</li>
+<li><a href="http://disu.se/software/u-1.0/">u</a> -
+  U extends Ruby’s Unicode support.</li>
+<li><a href="https://github.com/blackwinter/unicode">unicode</a> -
+  Unicode normalization library.</li>
+<li><a href="https://github.com/talyssonoc/CommonRegexRuby">CommonRegexRuby</a> -
+  Find a lot of kinds of common information in a string.</li>
+<li><a href="https://github.com/tom-lord/regexp-examples">regexp-examples</a> -
+  Generate strings that match a given regular expression.</li>
+<li><a href="https://github.com/ryan-endacott/verbal_expressions">verbal_expressions</a> -
+  Make difficult regular expressions easy.</li>
+</ul>
+<h2 id="articles-posts-talks-and-presentations">Articles, Posts, Talks, and Presentations</h2>
+<ul>
+<li>2017</li>
+<li><em>Scientific Computing on JRuby</em> by <a href="https://twitter.com/prasun_anand">Prasun Anand</a>
+    <sup>[<a href="https://www.slideshare.net/PrasunAnand2/fosdem2017-scientific-computing-on-jruby">slides</a> |
+    <a href="https://ftp.fau.de/fosdem/2017/K.4.201/ruby_scientific_computing_on_jruby.mp4">video</a> |
+    <a href="https://www.slideshare.net/PrasunAnand2/scientific-computing-on-jruby">slides</a> |
+    <a href="https://www.slideshare.net/PrasunAnand2/scientific-computation-on-jruby">slides</a>]</sup></li>
+<li><em>Unicode Normalization in Ruby</em> by <a href="https://twitter.com/starrhorne">Starr Horne</a>
+    <sup>[<a href="http://blog.honeybadger.io/ruby_unicode_normalization/">post</a>]</sup></li>
+<li>2016</li>
+<li><em>Quickly Create a Telegram Bot in Ruby</em> by <a href="https://twitter.com/ArdianHaxha">Ardian Haxha</a>
+    <sup>[<a href="https://www.sitepoint.com/quickly-create-a-telegram-bot-in-ruby/">tutorial</a>]</sup></li>
+<li><em>Deep Learning: An Introduction for Ruby Developers</em> by <a href="https://twitter.com/geoffreylitt">Geoffrey Litt</a>
+    <sup>[<a href="https://speakerdeck.com/geoffreylitt/deep-learning-an-introduction-for-ruby-developers">slides</a>]</sup></li>
+<li><em>How I made a pure-Ruby word2vec program more than 3x faster</em> by <a href="https://twitter.com/remore">Kei Sawada</a>
+    <sup>[<a href="https://speakerdeck.com/remore/how-i-made-a-pure-ruby-word2vec-program-more-than-3x-faster">slides</a>]</sup></li>
+<li><em>Dōmo arigatō, Mr. Roboto: Machine Learning with Ruby</em> by <a href="https://twitter.com/ericqweinstein">Eric Weinstein</a>
+    <sup>[<a href="https://speakerdeck.com/ericqweinstein/domo-arigato-mr-roboto-machine-learning-with-ruby">slides</a> | <a href="https://www.youtube.com/watch?v=T1nFQ49TyeA">video</a>]</sup></li>
+<li>2015</li>
+<li><em>N-gram Analysis for Fun and Profit</em> by <a href="https://github.com/matugm">Jesus Castello</a>
+    <sup>[<a href="http://www.blackbytes.info/2015/09/ngram-analysis-ruby/">tutorial</a>]</sup></li>
+<li><em>Machine Learning made simple with Ruby</em> by <a href="https://github.com/rugginoso">Lorenzo Masini</a>
+    <sup>[<a href="https://www.leanpanda.com/blog/2015/08/24/machine-learning-automatic-classification/">tutorial</a>]</sup></li>
+<li><em>Using Ruby Machine Learning to Find Paris Hilton Quotes</em> by <a href="https://github.com/RickCarlino">Rick Carlino</a>
+    <sup>[<a href="https://web-beta.archive.org/web/20160515115739/http://datamelon.io/blog/2015/using-ruby-machine-learning-id-paris-hilton-quotes.html">tutorial</a>]</sup></li>
+<li><em>Exploring Natural Language Processing in Ruby</em> by <a href="https://github.com/diasks2">Kevin Dias</a>
+    <sup>[<a href="https://www.slideshare.net/diasks2/exploring-natural-language-processing-in-ruby">slides</a>]</sup></li>
+<li><em>Machine Learning made simple with Ruby</em> by <a href="https://twitter.com/rugginoso">Lorenzo Masini</a>
+    <sup>[<a href="https://www.leanpanda.com/blog/2015/08/24/machine-learning-automatic-classification/">post</a>]</sup></li>
+<li><em>Practical Data Science in Ruby</em> by Bobby Grayson
+    <sup>[<a href="http://slides.com/bobbygrayson/p#/">slides</a>]</sup></li>
+<li>2014</li>
+<li><em>Natural Language Parsing with Ruby</em> by <a href="https://github.com/glaucocustodio">Glauco Custódio</a>
+    <sup>[<a href="http://glaucocustodio.github.io/2014/11/10/natural-language-parsing-with-ruby/">tutorial</a>]</sup></li>
+<li><em>Demystifying Data Science: Analyzing Conference Talks with Rails and Ngrams</em> by
+    <a href="https://github.com/toddwschneider">Todd Schneider</a>
+    <sup>[<a href="https://www.youtube.com/watch?v=2ZDCxwB29Bg">video</a> | <a href="https://github.com/Genius/abstractogram">code</a>]</sup></li>
+<li><em>Natural Language Processing with Ruby</em> by <a href="https://github.com/t6d">Konstantin Tennhard</a>
+    <sup>[<a href="https://www.youtube.com/watch?v=5u86qVh8r0M">video</a> | <a href="https://www.youtube.com/watch?v=oFmy_QBQ5DU">video</a> |
+    <a href="https://www.youtube.com/watch?v=sPkeeWnsMn0">video</a> |
+    <a href="http://euruko2013.org/speakers/presentations/natural_language_processing_with_ruby_and_opennlp-tennhard.pdf">slides</a>]</sup></li>
+<li>2013</li>
+<li><em>How to parse 'go' - Natural Language Processing in Ruby</em> by
+    <a href="https://twitter.com/tomcartwrightuk">Tom Cartwright</a>
+    <sup>[<a href="https://www.slideshare.net/TomCartwright/natual-language-processing-in-ruby">slides</a> |
+    <a href="https://skillsmatter.com/skillscasts/4883-how-to-parse-go">video</a>]</sup></li>
+<li><em>Natural Language Processing in Ruby</em> by <a href="https://github.com/brandonblack">Brandon Black</a>
+    <sup>[<a href="https://speakerdeck.com/brandonblack/natural-language-processing-in-ruby">slides</a> |
+    <a href="http://confreaks.tv/videos/railsconf2013-natural-language-processing-with-ruby">video</a>]</sup></li>
+<li><em>Natural Language Processing with Ruby: n-grams</em> by <a href="https://github.com/nathankleyn">Nathan Kleyn</a>
+    <sup>[<a href="https://www.sitepoint.com/natural-language-processing-ruby-n-grams/">tutorial</a> |
+    <a href="https://github.com/nathankleyn/ruby_nlp">code</a>]</sup></li>
+<li><em>Seeking Lovecraft, Part 1: An introduction to NLP and the Treat Gem</em> by
+    <a href="https://github.com/rlqualls">Robert Qualls</a>
+    <sup>[<a href="https://www.sitepoint.com/seeking-lovecraft-part-1-an-introduction-to-nlp-and-the-treat-gem/">tutorial</a>]</sup></li>
+<li>2012</li>
+<li><em>Machine Learning with Ruby, Part One</em> by <a href="https://twitter.com/vasinov">Vasily Vasinov</a>
+    <sup>[<a href="http://www.vasinov.com/blog/machine-learning-with-ruby-part-one/">tutorial</a>]</sup></li>
+<li>2011</li>
+<li><em>Ruby one-liners</em> by <a href="https://twitter.com/benoithamelin">Benoit Hamelin</a>
+    <sup>[<a href="http://benoithamelin.tumblr.com/ruby1line">post</a>]</sup></li>
+<li><em>Clustering in Ruby</em> by <a href="https://twitter.com/colinfdrake">Colin Drake</a>
+    <sup>[<a href="https://colindrake.me/2011/05/28/clustering-in-ruby/">post</a>]</sup></li>
+<li>2010</li>
+<li><em>bayes_motel – Bayesian classification for Ruby</em> by <a href="https://twitter.com/mperham">Mike Perham</a>
+    <sup>[<a href="http://www.mikeperham.com/2010/04/28/bayes_motel-bayesian-classification-for-ruby/">post</a>]</sup></li>
+<li>2009</li>
+<li><em>Porting the UEA-Lite Stemmer to Ruby</em> by <a href="https://twitter.com/ealdent">Jason Adams</a>
+    <sup>[<a href="https://ealdent.wordpress.com/2009/07/16/porting-the-uea-lite-stemmer-to-ruby/">post</a>]</sup></li>
+<li><em>NLP Resources for Ruby</em> by <a href="https://twitter.com/ealdent">Jason Adams</a>
+    <sup>[<a href="https://ealdent.wordpress.com/2009/09/13/nlp-resources-for-ruby/">post</a>]</sup></li>
+<li>2008</li>
+<li><em>Support Vector Machines (SVM) in Ruby</em> by <a href="https://twitter.com/igrigorik">Ilya Grigorik</a>
+    <sup>[<a href="https://www.igvita.com/2008/01/07/support-vector-machines-svm-in-ruby/">post</a>]</sup></li>
+<li><em>Practical text classification with Ruby</em> by <a href="https://twitter.com/gleicon">Gleicon Moraes</a>
+    <sup>[<a href="https://zenmachine.wordpress.com/practical-text-classification-with-ruby/">post</a> |
+    <a href="https://github.com/gleicon/zenmachine">code</a>]</sup></li>
+<li>2007</li>
+<li><em>Decision Tree Learning in Ruby</em> by <a href="https://twitter.com/igrigorik">Ilya Grigorik</a>
+    <sup>[<a href="https://www.igvita.com/2007/04/16/decision-tree-learning-in-ruby/">post</a>]</sup></li>
+</ul>
+<h2 id="projects-and-code-examples">Projects and Code Examples</h2>
+<ul>
+<li><a href="https://github.com/schneems/going_the_distance">Going the Distance</a> -
+  Implementations of various distance algorithms with example calculations.</li>
+<li><a href="https://github.com/mblongii/ruby-ner">Named entity recognition with Stanford NER and Ruby</a> -
+  NER Examples in Ruby and Java with some <a href="https://web.archive.org/web/20120722225402/http://mblongii.com/2012/04/15/named-entity-recognition-with-stanford-ner-and-ruby/">explanations</a>.</li>
+</ul>
+<h2 id="books">Books</h2>
+<ul>
+<li><a href="https://twitter.com/robmil/">Miller, Rob</a>.
+   <em>Text Processing with Ruby: Extract Value from the Data That Surrounds You.</em>
+   Pragmatic Programmers, 2015.
+   <sup>[<a href="https://www.amazon.com/Text-Processing-Ruby-Extract-Surrounds/dp/1680500708">link</a>]</sup></li>
+<li><a href="https://twitter.com/mark_l_watson">Watson, Mark</a>.
+   <em>Scripting Intelligence: Web 3.0 Information Gathering and Processing.</em>
+   APRESS, 2010.
+   <sup>[<a href="https://www.amazon.de/Scripting-Intelligence-Information-Gathering-Processing/dp/1430223510">link</a>]</sup></li>
+<li><a href="https://twitter.com/mark_l_watson">Watson, Mark</a>.
+   <em>Practical Semantic Web and Linked Data Applications.</em> Lulu, 2010.
+   <sup>[<a href="http://www.lulu.com/shop/mark-watson/practical-semantic-web-and-linked-data-applications-java-edition/paperback/product-10915016.html">link</a>]</sup></li>
+</ul>
+<h2 id="community">Community</h2>
+<ul>
+<li><a href="https://www.reddit.com/r/LanguageTechnology/search?q=ruby&amp;restrict_sr=on">Reddit</a></li>
+<li><a href="http://stackoverflow.com/search?q=%5Bnlp%5D+and+%5Bruby%5D">Stack Overflow</a></li>
+<li><a href="https://twitter.com/search?q=Ruby%20NLP%20%23ruby%20OR%20%23nlproc%20OR%20%23rubynlp%20OR%20%23nlp&amp;src=typd&amp;lang=en">Twitter</a></li>
+</ul>
+<h2 id="needs-your-help">Needs your Help!</h2>
+<p>All projects in this section are really important for the community but need
+more attention. Please if you have spare time and dedication spend some hours
+on the code here.</p>
+<ul>
+<li><a href="https://github.com/jkraemer/ferret">ferret</a> -
+  Information Retrieval in C and Ruby.</li>
+</ul>
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+<li><a href="https://github.com/markets/awesome-ruby#natural-language-processing">Awesome Ruby</a> -
+  Among other awesome items a short list of NLP related projects.</li>
+<li><a href="https://github.com/diasks2/ruby-nlp">Ruby NLP</a> -
+  State-of-Art collection of Ruby libraries for NLP.</li>
+<li><a href="https://github.com/edobashira/speech-language-processing">Speech and Natural Language Processing</a> -
+  General List of NLP related resources (mostly not for Ruby programmers).</li>
+<li><a href="http://sciruby.com/">Scientific Ruby</a> -
+  Linear Algebra, Visualization and Scientific Computing for Ruby.</li>
+<li><a href="https://github.com/SciRuby/iruby">iRuby</a> - IRuby kernel for Jupyter (formelly IPython).</li>
+<li><a href="https://github.com/thbar/kiba">Kiba</a> -
+  Lightweight <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">ETL</a> (Extract, Transform, Load) pipeline.</li>
+<li><a href="https://github.com/kba/awesome-ocr">Awesome OCR</a> -
+  Multitude of OCR (Optical Character Recognition) resources.</li>
+<li><a href="https://github.com/jtoy/awesome-tensorflow">Awesome TensorFlow</a> -
+  Machine Learning with TensorFlow libraries.</li>
+<li><a href="https://github.com/SciRuby/rb-gsl">rb-gsl</a> -
+  Ruby interface to the <a href="https://www.gnu.org/software/gsl/">GNU Scientific Library</a>.</li>
+<li><a href="https://silverhammermba.github.io/emberb/">The Definitive Guide to Ruby's C API</a> -
+  Modern Reference and Tutorial on Embedding and Extending Ruby using C programming language.</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>We are very glad to see you in this section and highly appreciate any help!</p>
+<p>But we also take care about the quality of this list. If you want to contribute
+please:</p>
+<ul>
+<li>agree that your work will be published under the terms of the <code>CC0</code> license;</li>
+<li>carefully read the <a href="https://github.com/arbox/nlp-with-ruby/blob/master/CONTRIBUTING.md">Contribution Guidelines</a>.</li>
+</ul>
+<p>Some of the open tasks for contributors are listed in the <a href="https://github.com/arbox/nlp-with-ruby/blob/master/todo.md">todo file</a>.
+You may want to start there.</p>
+<h2 id="license">License</h2>
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="Creative Commons Zero 1.0" src="http://mirrors.creativecommons.org/presskit/buttons/80x15/svg/cc-zero.svg" /></a> <code>Awesome NLP with Ruby</code> by <a href="https://github.com/arbox">Andrei Beliankou</a> and
+<a href="https://github.com/arbox/nlp-with-ruby/graphs/contributors">Contributors</a>.</p>
+<p>To the extent possible under law, the person who associated CC0 with
+<code>Awesome NLP with Ruby</code> has waived all copyright and related or neighboring rights
+to <code>Awesome NLP with Ruby</code>.</p>
+<p>You should have received a copy of the CC0 legalcode along with this
+work. If not, see <a href="https://creativecommons.org/publicdomain/zero/1.0/">https://creativecommons.org/publicdomain/zero/1.0/</a>.</p>
+<!--- Links ---></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '.';</script>
+        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+        <script src="./js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 0.16.3
+Build Date UTC : 2017-04-12 14:14:22
+-->
