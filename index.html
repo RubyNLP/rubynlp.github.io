@@ -99,6 +99,8 @@
             <li><a href="#high-level-tasks">High Level Tasks</a></li>
             <li><a href="#linguistic-resources">Linguistic Resources</a></li>
             <li><a href="#machine-learning-libraries">Machine Learning Libraries</a></li>
+            <li><a href="#optical-character-recognition">Optical Character Recognition</a></li>
+            <li><a href="#text-extraction">Text Extraction</a></li>
             <li><a href="#full-text-search-information-retrieval-indexing">Full Text Search, Information Retrieval, Indexing</a></li>
             <li><a href="#language-aware-string-manipulation">Language Aware String Manipulation</a></li>
             <li><a href="#articles-posts-talks-and-presentations">Articles, Posts, Talks, and Presentations</a></li>
@@ -140,6 +142,7 @@ suggestions and contributions are welcome! We kindly ask you to study
 the <a href="#contributing">Contribution</a> section. Follow us on <a href="https://twitter.com/RubyNLP">Twitter</a>
 and please spread the word using the <code>#RubyNLP</code> hash tag!</p>
 <h2 id="nlp-pipeline-subtasks">NLP Pipeline Subtasks</h2>
+<p>An NLP Pipeline starts with a plain text.</p>
 <h3 id="pipeline-generation">Pipeline Generation</h3>
 <ul>
 <li><a href="https://github.com/t6d/composable_operations">composable_operations</a> -
@@ -221,12 +224,14 @@ are often collected in dictionaries.</p>
 <li><a href="https://github.com/yohasebe/lemmatizer">lemmatizer</a> -
   WordNet based Lemmatizer for English texts.</li>
 </ul>
-<h4 id="counting-types-and-tokens">Counting Types and Tokens</h4>
+<h4 id="lexical-statistics-counting-types-and-tokens">Lexical Statistics: Counting Types and Tokens</h4>
 <ul>
 <li><a href="https://github.com/thesp0nge/wc">wc</a> -
   Facilities to count word occurrences in a text.</li>
 <li><a href="https://github.com/AtelierConvivialite/word_count">word_count</a> -
   Word counter for <code>String</code> and <code>Hash</code> objects.</li>
+<li><a href="https://github.com/abitdodgy/words_counted">words_counted</a> -
+  Pure Ruby library counting word statistics with different custom options.</li>
 </ul>
 <h4 id="filtering-stop-words">Filtering Stop Words</h4>
 <ul>
@@ -254,8 +259,6 @@ are often collected in dictionaries.</p>
   Set of five distance types between strings (including Levenshtein, Sellers, Jaro-Winkler, 'pair distance').</li>
 <li><a href="https://github.com/GlobalNamesArchitecture/damerau-levenshtein">damerau-levenshtein</a> -
   Calculates edit distance using the Damerau-Levenshtein algorithm.</li>
-<li><a href="https://github.com/brianhempel/fuzzy_tools">FuzzyTools</a> -
-  In-memory TF/IDF fuzzy document finding with a fancy default tokenizer.</li>
 <li><a href="https://github.com/colinsurprenant/hotwater">hotwater</a> -
   Fast Ruby FFI string edit distance algorithms.</li>
 <li><a href="https://github.com/dbalatero/levenshtein-ffi">levenshtein-ffi</a> -
@@ -289,12 +292,14 @@ are often collected in dictionaries.</p>
 </ul>
 <h3 id="machine-translation">Machine Translation</h3>
 <ul>
-<li><a href="https://github.com/google/google-api-ruby-client">Google API Client</a> -
+<li><a href="https://github.com/google/google-api-ruby-client">google-api-client</a> -
   Google API Ruby Client.</li>
 <li><a href="https://github.com/ikayzo/microsoft_translator">microsoft_translator</a> -
   Ruby client for the microsoft translator API.</li>
 <li><a href="https://github.com/pawurb/termit">termit</a> -
   Google Translate with speech synthesis in your terminal.</li>
+<li><a href="https://github.com/pks/zipf">zipf</a> -
+  implementation of BLEU and other base algorithms.</li>
 </ul>
 <h3 id="dialog-systems">Dialog Systems</h3>
 <ul>
@@ -387,6 +392,17 @@ for Ruby.</p>
 <li><a href="https://github.com/tangledpath/ruby-fann">ruby-fann</a> -
   Ruby bindings to the <a href="http://leenissen.dk/fann/wp/">Fast Artificial Neural Network Library (FANN)</a>.</li>
 </ul>
+<h2 id="optical-character-recognition">Optical Character Recognition</h2>
+<ul>
+<li><a href="https://github.com/meh/ruby-tesseract-ocr">tesseract-ocr</a> -
+  FFI based wrapper over the <a href="https://github.com/tesseract-ocr/tesseract">Tesseract OCR Engine</a>.</li>
+</ul>
+<h2 id="text-extraction">Text Extraction</h2>
+<ul>
+<li><a href="https://github.com/Erol/yomu">yomu</a> -
+  library for extracting text and metadata from files and documents
+  using the <a href="https://tika.apache.org/">Apache Tika</a> content analysis toolkit.</li>
+</ul>
 <h2 id="full-text-search-information-retrieval-indexing">Full Text Search, Information Retrieval, Indexing</h2>
 <ul>
 <li><a href="https://github.com/rsolr/rsolr">rsolr</a> -
@@ -400,18 +416,22 @@ for Ruby.</p>
   Ruby client and API for <a href="https://www.elastic.co/">Elasticsearch</a>.</li>
 <li><a href="https://github.com/elastic/elasticsearch-rails">elasticsearch-rails</a> -
   Ruby and Rails integrations for <a href="https://www.elastic.co/">Elasticsearch</a>.</li>
+<li><a href="https://github.com/google/google-api-ruby-client">google-api-client</a> -
+  Ruby API library for <a href="https://developers.google.com/api-client-library/ruby/">Google</a> services.</li>
 </ul>
 <h2 id="language-aware-string-manipulation">Language Aware String Manipulation</h2>
 <p>Libraries for language aware string manipulation, i.e. search, pattern matching,
 case conversion, transcoding, regular expressions which need information about
 the underlying language.</p>
 <ul>
-<li><a href="https://github.com/seamusabshere/fuzzy_match">FuzzyMatch</a> -
-  find a needle in a haystack based on string similarity and regular expression rules.</li>
+<li><a href="https://github.com/seamusabshere/fuzzy_match">fuzzy_match</a> -
+  Fuzzy string comparison with Distance measures and Regular Expression.</li>
 <li><a href="https://github.com/kiyoka/fuzzy-string-match">fuzzy-string-match</a> -
   Fuzzy string matching library for Ruby.</li>
 <li><a href="https://github.com/rails/rails/tree/master/activesupport/lib/active_support">active_support</a> -
   RoR <code>ActiveSupport</code> gem has various string extensions that can handle case.</li>
+<li><a href="https://github.com/brianhempel/fuzzy_tools">fuzzy_tools</a> -
+  Toolset for fuzzy searches in Ruby tuned for accuracy.</li>
 <li><a href="http://disu.se/software/u-1.0/">u</a> -
   U extends Ruby’s Unicode support.</li>
 <li><a href="https://github.com/blackwinter/unicode">unicode</a> -
@@ -511,6 +531,9 @@ the underlying language.</p>
   Implementations of various distance algorithms with example calculations.</li>
 <li><a href="https://github.com/mblongii/ruby-ner">Named entity recognition with Stanford NER and Ruby</a> -
   NER Examples in Ruby and Java with some <a href="https://web.archive.org/web/20120722225402/http://mblongii.com/2012/04/15/named-entity-recognition-with-stanford-ner-and-ruby/">explanations</a>.</li>
+<li><a href="http://rubywordcount.com/">Words Counted</a> -
+  examples of customizable word statistics powered by
+  <a href="https://github.com/abitdodgy/words_counted">words_counted</a>.</li>
 </ul>
 <h2 id="books">Books</h2>
 <ul>
@@ -539,6 +562,8 @@ on the code here.</p>
 <ul>
 <li><a href="https://github.com/dbalmain/ferret">ferret</a> -
   Information Retrieval in C and Ruby.</li>
+<li><a href="https://github.com/ssoper/summarize">summarize</a> -
+  Ruby native wrapper for <a href="https://github.com/neopunisher/Open-Text-Summarizer">Open Text Summarizer</a>.</li>
 </ul>
 <h2 id="related-resources">Related Resources</h2>
 <ul>
@@ -619,5 +644,5 @@ work. If not, see <a href="https://creativecommons.org/publicdomain/zero/1.0/">h
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2017-04-12 15:40:33
+Build Date UTC : 2017-04-16 18:26:59
 -->
